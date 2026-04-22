@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gymcee Prototype</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Gymcee Prototype</h1>
+    <p>A simple prototype to log workouts and meals.</p>
+
+    <section class="card">
+        <h2>Log Workout</h2>
+        <input id="workout" placeholder="Workout (e.g., Push Day)">
+        <input id="duration" placeholder="Duration (minutes)">
+        <button onclick="saveWorkout()">Save Workout</button>
+    </section>
+
+    <section class="card">
+        <h2>Log Meal</h2>
+        <input id="meal" placeholder="Meal (e.g., Chicken & Rice)">
+        <input id="calories" placeholder="Calories">
+        <button onclick="saveMeal()">Save Meal</button>
+    </section>
+
+    <section class="card">
+        <h2>Today's Summary</h2>
+        <div id="summary"></div>
+    </section>
+
+    <section class="card">
+        <h2>History</h2>
+        <ul id="history"></ul>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
